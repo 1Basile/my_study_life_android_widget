@@ -26,7 +26,7 @@ Note:
     Found in the local storage (under Chrome Developer Tools - Application in Chrome) as '_'
     accessible via Chrome developer console via `localStorage._`
     
-* Next, install [app](releases/tag/1) and paste token in input field, and press _"Confirm"_:
+* Next, install [app](https://github.com/1Basile/my_study_life_android_widget/releases/tag/1) and paste token in input field, and press _"Confirm"_:
 
     ![Token input field](instalation_screen_1.jpg)
     How to install apps from apk, you can read [here](https://www.expressvpn.com/support/vpn-setup/enable-apk-installs-android/).

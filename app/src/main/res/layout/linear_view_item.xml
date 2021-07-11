@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="8dp"
+    android:background="@android:color/transparent">
+
+    <RelativeLayout
+        android:id="@+id/table_item_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:clickable="true">
+
+        <TextView
+            android:id="@+id/task_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="0dp"
+            android:fontFamily="sans-serif"
+            android:gravity="center|start"
+            android:paddingStart="8dp"
+            android:paddingTop="8dp"
+            android:paddingBottom="4dp"
+            android:text="Task_to_do"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/subject_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/task_text"
+            android:layout_marginStart="0dp"
+            android:layout_marginTop="0dp"
+            android:layout_toEndOf="@+id/round_gray_image"
+            android:gravity="center|start"
+            android:paddingStart="5dp"
+            android:text="Subject name"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:id="@+id/round_gray_image"
+            android:layout_width="wrap_content"
+            android:layout_height="14dp"
+            android:layout_below="@+id/task_text"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="2dp"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            app:srcCompat="@drawable/ic_round_0_light_green" />
+
+        <TextView
+            android:id="@+id/time_left_to_do"
+            android:layout_width="70dp"
+            android:layout_height="32dp"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:gravity="center|end"
+            android:text="31 Feb"
+            android:textColor="@android:color/holo_red_light"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/percent_of_done_text"
+            android:layout_width="46dp"
+            android:layout_height="16dp"
+            android:layout_below="@+id/time_left_to_do"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="0dp"
+            android:layout_toStartOf="@+id/percentImView"
+            android:gravity="center|end"
+            android:text="101%"
+            android:textSize="10dp" />
+
+        <ImageView
+            android:id="@+id/percentImView"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:layout_below="@+id/time_left_to_do"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="0dp"
+            android:visibility="visible"
+            app:srcCompat="@drawable/ic_near_pcent_pen" />
+
+    </RelativeLayout>
+
+</LinearLayout>

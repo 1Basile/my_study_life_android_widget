@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/msl_token_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="58dp"
+        android:text="Msl token" />
+
+    <EditText
+        android:id="@+id/msl_token"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginTop="82dp"
+        android:ems="14"
+        android:inputType="textPassword"
+        android:text="@string/msl_token" />
+
+    <Button
+        android:id="@+id/showHideBtn"
+        android:layout_width="60dp"
+        android:layout_height="37dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="70dp"
+        android:layout_toEndOf="@+id/msl_token"
+        android:text="Show"
+        android:textSize="8dp" />
+
+    <Button
+        android:id="@+id/confirm_token_button"
+        android:layout_width="60dp"
+        android:layout_height="37dp"
+        android:layout_alignBottom="@+id/showHideBtn"
+        android:layout_marginStart="5dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_toEndOf="@+id/msl_token"
+        android:text="Confirm"
+        android:textSize="5dp" />
+
+    <TextView
+        android:id="@+id/purpose_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="11dp"
+        android:text="Widget Configurations" />
+
+</RelativeLayout>
